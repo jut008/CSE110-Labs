@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+}
+p {
+    font-size: 18px;
+}
+h2 {
+    font-size: 20px;
+}
+html {
+    scroll-padding-top: 130px;
+}
+
+.navbar li img {
+    max-width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 20px; /* The font size was too big for my liking so instead of 28 its 20 */
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.navbar a:hover {
+    background-color: #182b49;
+    color: white;
+}  
+.navbar a.active {
+    background-color: #182b49;
+    color: white;
+}
+  
+.content {
+    padding: 16px;
+}
+
+#Section1 {
+    padding: 10px 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: rgb(245, 240, 230)
+}
+
+#Section2 {
+    padding: 10px 12px;
+    color: white;
+    background-image: url("bg-orbs-1.jpg");
+}
+
+.section-heading {
+    grid-column: 1 / -1; /* Spans from the first column to the last column */
+    margin-bottom: 5px; /* Adds space between the heading and the grid */
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.grid-item {
+    background-color: #182b49;
+    color: white;
+    padding: 20px;
+    height: auto;
+    box-sizing: border-box;
+    max-height: 500px; /* Maximum height for the boxes */
+    overflow: auto; /* Enables scrolling if the content overflows */
+    white-space: pre-wrap; /* Preserves formatting for text and wraps if needed */
+    text-align: left; /* Aligns text to the left inside the boxes */
+}
+
+#Section1 img, #Section2 img {
+    max-width: 100%;
+    height: auto; /* Maintain the aspect ratio of the images */
+    display: block; /* Remove extra space below the image */
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* Adjust the top logo to scale on small screens */
+    .navbar li img {
+        max-width: 75%; /* Logo scales to 75% of its container */
+        height: auto;
+        max-height: 60px;
+    }
+
+    /* Hide the anchor links */
+    .navbar li a {
+        display: none; /* Hides anchor links on small screens */
+    }
+
+    /* Adjust font sizes for small screens */
+    h2 {
+        font-size: 24px; /* Header font size for smaller screens */
+    }
+
+    p {
+        font-size: 20px; /* Paragraph font size for smaller screens */
+    }
+
+    /* Change grid layout to 2-column on smaller screens */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2-column grid on small screens */
+        grid-gap: 10px; /* Smaller gap between columns */
+    }
+}

@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1>
-        Lab 1
-    </h1>
-    <div>
-        <p><img src="Lab1Photos/logo_UCSD.png" alt="UCSD Logo">
-        <a href="#Section1">Section 1</a><a href="#Section2"> Section 2</a></p>
-    </div>
+    <head>
+        <!--<img src="Lab1Photos/logo_UCSD.png" alt="UCSD Logo">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <div>
-        <h2 id="Section1">Section 1</h2>
-        <p><img src="Lab1Photos/ucsd-athletics-logo.svg" alt="UCSD Atheletics Logo">Gibberish lines...</p>
-    </div>
-    <div>  
-    <h2 id="Section2">Section 2</h2>
-    <p><img src="Lab1Photos/logos-college-logos.svg" alt="College Logos"></p>
-    </div>
-</body>
+    <body>
+
+        <div class="navbar">
+            <ul>
+                <li style="text-align: left; width: 100%;">
+                    <img src="Lab1Photos/logo_UCSD.png" alt="Logo" style="height: 80px;">
+                </li>
+                <li><a href="#Section1">Section 1</a></li>
+                <li><a href="#Section2">Section 2</a></li>
+                <li><a href="#Section3">Section 3</a></li>
+            </ul>
+        </div>
+
+        <div id="Section1">
+            <h2>Section 1</h2>
+            <p><img src="Lab1Photos/ucsd-athletics-logo.svg" alt="UCSD Atheletics Logo"></p>
+            <p> Praesent volutpat lorem fringilla dolor pretium dapibus. Aenean vitae sem at sapien laoreet dapibus. Ut vitae ipsum bibendum, vestibulum turpis consequat, dapibus ante. Vivamus dictum molestie sem in imperdiet. Nunc ac velit in ligula commodo posuere sed eget neque. Curabitur ut bibendum lacus. Sed nisl purus, convallis at malesuada et, imperdiet sed quam. Fusce mauris lorem, ultricies sed porta sed, efficitur varius nunc. Proin egestas diam nibh, in condimentum orci pharetra vitae. Vestibulum feugiat malesuada posuere. Morbi venenatis in libero sed lacinia. Suspendisse iaculis sagittis massa et tempus. Vivamus eleifend tincidunt nibh, vitae tempor metus accumsan et. In feugiat varius mauris. Nunc id felis tincidunt, cursus libero a, egestas lacus.</p>
+        </div>
+
+        <div id="Section2">
+            <h2>Section 2</h2>
+            <p><img src="Lab1Photos/logos-college-logos.svg" alt="College Logos"></p>
+        </div>
+
+        <div class="grid-container">
+            <h2 id="Section3" class="section-heading">Section 3</h2>
+            <div class="grid-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus metus eget arcu pulvinar, quis venenatis nisl pretium. Vivamus ut libero neque. Donec fermentum pellentesque ipsum non accumsan. Quisque efficitur leo vel aliquam auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ac massa at ipsum blandit finibus id et risus. Morbi at nibh orci. Cras volutpat leo a dui finibus scelerisque. Aenean eleifend ultrices nulla sed rutrum. Praesent leo mauris, venenatis vitae viverra eget, ornare vel mi. Praesent vitae est scelerisque, facilisis nibh id, gravida diam. Sed convallis purus eu nisi volutpat tempor. Nulla lacinia, leo eu sagittis pellentesque, magna est laoreet dolor, eget mollis justo odio ut neque. In sit amet ante et mauris dictum vehicula ut sit amet augue. Nullam sit amet nisi vel ex gravida pharetra. Quisque varius sem est, et consectetur nibh sagittis et. Nunc sed nisl eget elit malesuada finibus. Sed quis neque elit. Donec hendrerit tellus non metus commodo consectetur. Ut maximus luctus felis in varius. Nullam non leo et quam volutpat tincidunt. Curabitur vitae magna felis. Proin in libero id sem vulputate mollis sed vel nisi. Suspendisse imperdiet, quam a fringilla rhoncus, orci metus commodo nisl, nec ultrices neque est eget est.</div>
+            <div class="grid-item"> Aenean et nibh ut elit eleifend gravida. Suspendisse aliquet semper diam pharetra aliquet. Fusce ultrices arcu felis, vel facilisis risus porta eu. Quisque sollicitudin quis odio condimentum laoreet. Nam risus arcu, imperdiet eget lorem ac, posuere tincidunt nibh. Donec malesuada a turpis dictum malesuada. Etiam porta non ipsum ac auctor. Nullam quis mi ut felis aliquam interdum. Aliquam non nibh congue, pretium tortor nec, eleifend elit. Etiam leo massa, scelerisque at sagittis vel, euismod sed urna. Praesent tincidunt dui quis nunc congue, in tincidunt lectus ornare. Integer imperdiet ligula in tincidunt dignissim. Proin quis magna tincidunt, vulputate enim in, suscipit neque. Proin bibendum mollis nulla eu pharetra. Proin non neque varius, sagittis eros et, dapibus eros. Donec vel neque mattis nisi congue efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt lacus eget nunc porttitor posuere. Etiam dapibus tellus est, sed ornare dolor semper et. Nunc ultricies elementum turpis, vel lobortis sem vehicula ac. Pellentesque lobortis, velit at commodo scelerisque, mi dui consectetur magna, quis placerat mi arcu vel elit. Cras dictum sagittis augue, vel consequat sapien. Vivamus placerat vehicula risus at volutpat. </div>
+            <div class="grid-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis placerat felis nec gravida. Fusce id dapibus lorem. Praesent condimentum porta augue. Ut ultricies convallis magna, quis consectetur elit rutrum facilisis. Donec aliquam, sem vitae mattis varius, nibh lectus gravida felis, placerat porta lectus lorem ut massa. Donec mauris enim, lobortis sit amet euismod commodo, efficitur ac elit. Etiam dictum mi erat, sit amet suscipit tellus tempor a. In hac habitasse platea dictumst. Duis tristique egestas purus a bibendum. Sed dignissim, velit eu tincidunt vehicula, metus arcu convallis lorem, quis laoreet neque ligula eu justo. Donec lobortis nec odio pretium tempus. Aliquam faucibus risus non quam vehicula tristique. Cras porta nec tortor non cursus. Proin molestie dolor non elit dapibus tempus. Vestibulum ac tellus nec libero semper euismod. Aliquam vitae lacus cursus, finibus lorem a, pulvinar justo. Morbi arcu eros, pellentesque a congue in, pulvinar sed felis. </div>
+            <div class="grid-item"> Etiam bibendum pretium mi, sed tempor elit ullamcorper non. Cras ipsum nibh, sollicitudin nec purus quis, scelerisque suscipit velit. Aenean pellentesque turpis non odio suscipit, nec mattis diam aliquam. Praesent tristique dui at elit molestie tempor. Aliquam gravida purus quis fermentum auctor. Mauris hendrerit eleifend consectetur. In ut odio tellus. Aliquam consequat finibus risus nec vestibulum. Maecenas rutrum rutrum tortor ac posuere. Vivamus placerat, risus eget elementum congue, quam erat maximus erat, at euismod sem est non felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus auctor, dolor a auctor interdum, eros ligula fermentum augue, nec posuere lectus massa in urna. Nunc nec venenatis neque, nec congue leo. Aenean euismod in felis ut feugiat. </div>
+        </div>
+
+    </body>
 </html>
